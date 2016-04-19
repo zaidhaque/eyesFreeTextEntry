@@ -475,6 +475,9 @@
                             <constraint firstItem="r5f-1M-88A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="y9F-rP-qW8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="OutputTextField" destination="toq-zd-XWS" id="qdJ-s4-CbQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
