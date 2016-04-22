@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var OutputTextField: UITextField!
+    
+   
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +24,36 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func buttonPressed(sender: AnyObject) {
+    
+    
+    @IBAction func aVerticalKey(sender: AnyObject) {
     }
-
+    @IBAction func bVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func cVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func dVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func eVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func fVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func gVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func hVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func iVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func jVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func kVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func lVerticalKey(sender: AnyObject) {
+    }
+    @IBAction func mVerticalKey(sender: AnyObject) {
+    }
+    
+    
+    
 }
 
