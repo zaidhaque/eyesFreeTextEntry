@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<TextTest version="2.0.2" time="166972.851" date="Friday, April 16, 2004 06:30:56">
+<task number="1" testing="False">
+<presented>the dow jones index has risen</presented>
+<entry char="t" value="116" time="166978.836" />
+<entry char="h" value="104" time="166978.898" />
+<entry char="a" value="97" time="166980.148" />
+<entry char="&#008;" value="8" time="166980.414" />
+<entry char="e" value="101" time="166980.992" />
+<entry char=" " value="32" time="166981.336" />
+<entry char="d" value="100" time="166981.883" />
+<entry char="o" value="111" time="166982.351" />
+<entry char="c" value="99" time="166984.070" />
+<entry char="&#008;" value="8" time="166984.304" />
+<entry char="v" value="118" time="166984.758" />
+<entry char="&#008;" value="8" time="166984.976" />
+<entry char="w" value="119" time="166985.226" />
+<entry char=" " value="32" time="166985.617" />
+<entry char="j" value="106" time="166985.883" />
+<entry char="o" value="111" time="166986.242" />
+<entry char="n" value="110" time="166986.273" />
+<entry char="&#008;" value="8" time="166986.711" />
+<entry char="s" value="115" time="166987.008" />
+<entry char="n" value="110" time="166987.633" />
+<entry char="&#008;" value="8" time="166987.992" />
+<entry char="&#008;" value="8" time="166988.195" />
+<entry char="n" value="110" time="166988.226" />
+<entry char="e" value="101" time="166988.898" />
+<entry char="s" value="115" time="166989.289" />
+<entry char=" " value="32" time="166989.648" />
+<entry char="i" value="105" time="166989.976" />
+<entry char="n" value="110" time="166990.023" />
+<entry char="d" value="100" time="166990.492" />
+<entry char="e" value="101" time="166990.929" />
+<entry char="y" value="121" time="166991.336" />
+<entry char=" " value="32" time="166991.836" />
+<entry char="h" value="104" time="166992.664" />
+<entry char="a" value="97" time="166993.070" />
+<entry char="&#008;" value="8" time="166993.601" />
+<entry char="&#008;" value="8" time="166993.789" />
+<entry char="&#008;" value="8" time="166993.976" />
+<entry char="&#008;" value="8" time="166994.117" />
+<entry char="x" value="120" time="166994.429" />
+<entry char=" " value="32" time="166994.508" />
+<entry char="h" value="104" time="166994.711" />
+<entry char="a" value="97" time="166994.804" />
+<entry char="s" value="115" time="166994.914" />
+<entry char=" " value="32" time="166995.336" />
+<entry char="r" value="114" time="166995.961" />
+<entry char="i" value="105" time="166996.117" />
+<entry char="s" value="115" time="166996.445" />
+<entry char="e" value="101" time="166997.179" />
+<entry char="n" value="110" time="166997.273" />
+<entry char="&#008;" value="8" time="166997.773" />
+<entry char="," value="44" time="166998.164" />
+<entry char="&#008;" value="8" time="166998.586" />
+<entry char="m" value="109" time="166998.742" />
+<entry char="&#008;" value="8" time="166999.086" />
+<entry char="n" value="110" time="166999.211" />
+<transcribed>the dow jones index has risen</transcribed>
+</task>
+<task number="2" testing="False">
+<presented>burglars never leave their business card</presented>
+<entry char="b" value="98" time="167006.179" />
+<entry char="u" value="117" time="167006.304" />
+<entry char="r" value="114" time="167006.476" />
+<entry char="g" value="103" time="167006.804" />
+<entry char="l" value="108" time="167007.101" />
+<entry char="a" value="97" time="167007.242" />
+<entry char="r" value="114" time="167007.367" />
+<entry char="s" value="115" time="167007.523" />
+<entry char=" " value="32" time="167007.664" />
+<entry char="n" value="110" time="167008.148" />
+<entry char="a" value="97" time="167009.320" />
+<entry char=" " value="32" time="167009.883" />
+<entry char="&#008;" value="8" time="167010.898" />
+<entry char="v" value="118" time="167011.039" />
+<entry char="e" value="101" time="167011.429" />
+<entry char="r" value="114" time="167011.539" />
+<entry char=" " value="32" time="167012.054" />
+<entry char="l" value="108" time="167012.601" />
+<entry char="e" value="101" time="167012.992" />
+<entry char="a" value="97" time="167013.523" />
+<entry char="v" value="118" time="167014.054" />
+<entry char=" " value="32" time="167014.273" />
+<entry char="t" value="116" time="167014.711" />
+<entry char="h" value="104" time="167014.836" />
+<entry char="e" value="101" time="167015.023" />
+<entry char="i" value="105" time="167015.289" />
+<entry char="r" value="114" time="167016.101" />
+<entry char=" " value="32" time="167016.429" />
+<entry char="b" value="98" time="167016.851" />
+<entry char="u" value="117" time="167017.273" />
+<entry char="s" value="115" time="167017.898" />
+<entry char="i" value="105" time="167018.351" />
+<entry char="n" value="110" time="167018.429" />
+<entry char="e" value="101" time="167018.648" />
+<entry char="s" value="115" time="167018.961" />
+<entry char="s" value="115" time="167019.508" />
+<entry char=" " value="32" time="167019.789" />
+<entry char="c" value="99" time="167020.101" />
+<entry char="a" value="97" time="167020.289" />
+<entry char="r" value="114" time="167020.398" />
+<entry char="d" value="100" time="167020.523" />
+<transcribed>burglars naver leav their business card</transcribed>
+</task>
+<task number="3" testing="True">
+<presented>there are winners and losers</presented>
+<entry char="t" value="116" time="167028.101" />
+<entry char="h" value="104" time="167028.195" />
+<entry char="a" value="97" time="167028.679" />
+<entry char="r" value="114" time="167028.758" />
+<entry char="e" value="101" time="167028.883" />
+<entry char=" " value="32" time="167029.383" />
+<entry char="a" value="97" time="167029.586" />
+<entry char="r" value="114" time="167029.758" />
+<entry char="e" value="101" time="167029.898" />
+<entry char=" " value="32" time="167029.945" />
+<entry char="s" value="115" time="167030.570" />
+<entry char="i" value="105" time="167031.117" />
+<entry char="n" value="110" time="167031.179" />
+<entry char="n" value="110" time="167031.351" />
+<entry char="e" value="101" time="167031.664" />
+<entry char="r" value="114" time="167031.711" />
+<entry char="s" value="115" time="167032.179" />
+<entry char=" " value="32" time="167032.289" />
+<entry char="a" value="97" time="167032.429" />
+<entry char="n" value="110" time="167032.539" />
+<entry char="d" value="100" time="167032.648" />
+<entry char=" " value="32" time="167032.804" />
+<entry char="l" value="108" time="167033.008" />
+<entry char="o" value="111" time="167033.258" />
+<entry char="s" value="115" time="167033.383" />
+<entry char="e" value="101" time="167033.476" />
+<entry char="r" value="114" time="167033.570" />
+<entry char="s" value="115" time="167033.851" />
+<transcribed>thare are sinners and losers</transcribed>
+</task>
+<task number="4" testing="True">
+<presented>wear a crown with many jewels</presented>
+<entry char="w" value="119" time="167035.789" />
+<entry char="e" value="101" time="167035.867" />
+<entry char="a" value="97" time="167036.023" />
+<entry char="r" value="114" time="167036.148" />
+<entry char="a" value="97" time="167036.273" />
+<entry char=" " value="32" time="167036.351" />
+<entry char="c" value="99" time="167038.383" />
+<entry char="r" value="114" time="167038.570" />
+<entry char="o" value="111" time="167038.789" />
+<entry char="w" value="119" time="167038.883" />
+<entry char="n" value="110" time="167039.242" />
+<entry char=" " value="32" time="167039.351" />
+<entry char="w" value="119" time="167039.679" />
+<entry char="i" value="105" time="167039.773" />
+<entry char="t" value="116" time="167039.914" />
+<entry char="h" value="104" time="167039.976" />
+<entry char=" " value="32" time="167040.117" />
+<entry char="m" value="109" time="167040.258" />
+<entry char="a" value="97" time="167040.383" />
+<entry char="n" value="110" time="167040.476" />
+<entry char="y" value="121" time="167040.664" />
+<entry char=" " value="32" time="167040.789" />
+<entry char="j" value="106" time="167040.961" />
+<entry char="e" value="101" time="167041.054" />
+<entry char="w" value="119" time="167041.148" />
+<entry char="e" value="101" time="167041.258" />
+<entry char="l" value="108" time="167041.351" />
+<entry char="s" value="115" time="167041.476" />
+<transcribed>weara crown with many jewels</transcribed>
+</task>
+<close error="0" time="167046.304" date="Friday, April 16, 2004 06:32:09"/>
+</TextTest>

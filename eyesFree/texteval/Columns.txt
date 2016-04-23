@@ -1,0 +1,47 @@
+The following are explanations for the aggregate measure columns that are 
+produced by the StreamAnalyzer program. Numbers in brackets refer to the Bibliography.
+
+Num 		The task number for this trial.
+Testing? 	True/false. Whether this trial was testing or not.
+Time 		The total time (in seconds) for this trial.
+
+WPM 		The words per minute for this trial.
+AdjWPM 		The adjusted words per minute: WPM * (1 - Uncorrected Error Rate)
+CPS 		Characters per second. Equivalent to WPM.
+KSPS 		Keystrokes per second, a measure of how fast characters are sent [5,6].
+GPS 		Gestures per second, a measure of how fast gestures are made [5,6].
+
+Intra		Average time within characters for this trial [5,6].
+Inter 		Average time between characters for this trial [5,6].
+
+StrDist 	The minimum string distance (MSD) between P and T [3].
+
+MSD_v1 		The first MSD error rate defined in the literature [3].
+MSD_v2 		The second MSD error rate defined in the literature [1].
+MSD_v3 		The third MSD error rate defined in the literature [4].
+
+KSPC_v1		The first keystrokes per character defined in the literature [3]. 
+KSPC_v3 	The second KSPC defined. It accompanies the 3rd MSD defined [4].
+
+GPC 		Gestures per character, a measure of efficiency [5,6].
+GPKS 		Gestures per keystroke, a measure of verbosity [5,6].
+
+UncErrRate 	Uncorrected error rate [4].
+CorErrRate 	Corrected error rate [4].
+TotErrRate 	Total error rate [4].
+
+Effic 		Correction efficiency [4].
+Consc 		Participant conscientiousness [4].
+UtilBand 	Utilized bandwidth [4].
+WasteBand 	Wasted bandwidth [4].
+
+|C| 		The number of characters classified as "correct" [4].
+|INF| 		The number of characters classified as "incorrect not fixed" [4].
+|IF| 		The number of characters classified as "incorrect fixed" [4].
+|F| 		The number of characters classified as "fixes" [4].
+
+|P| 		The length of the presented string.
+|T| 		The length of the transcribed string.
+|IS| 		The length of the input stream, not counting non-recognitions.
+|G| 		The length of the input stream counting non-recognitions (number of gestures).
+|NR|		The number of non-recognitions in the input stream.

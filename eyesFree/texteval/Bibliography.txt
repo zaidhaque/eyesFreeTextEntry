@@ -1,0 +1,30 @@
+Bibliography of references for the code contained in this program.
+
+[1]	MacKenzie, I.S. and Soukoreff, R.W. (2002) A character-level error analysis 
+	technique for evaluating text entry methods. Proceedings of the 2nd Nordic 
+	Conference on Human-Computer Interaction (NordiCHI '02). Århus, Denmark 
+	(October 19-23, 2002). New York: ACM Press, pp. 243-246. 
+
+[2]	MacKenzie, I.S. and Soukoreff, R.W. (2003) Phrase sets for evaluating text entry
+	techniques. Extended Abstracts of the ACM Conference on Human Factors in
+	Computing Systems (CHI '03). Ft. Lauderdale, Florida (April 5-10, 2003). New York: 
+	ACM Press, pp. 754-755.
+
+[3]	Soukoreff, R.W. and MacKenzie, I.S. (2001) Measuring errors in text entry tasks: An 
+	application of the Levenshtein string distance statistic. Extended Abstracts 
+	of the ACM Conference on Human Factors in Computing Systems (CHI '01). Seattle, 
+	Washington (March 31-April 5, 2001). New York: ACM Press, pp. 319-320. 
+
+[4]	Soukoreff, R.W. and MacKenzie, I.S. (2003) Metrics for text entry research: An 
+	evaluation of MSD and KSPC, and a new unified error metric. Proceedings of the ACM 
+	Conference on Human Factors in Computing Systems (CHI '03). Ft. Lauderdale, Florida
+	(April 5-10, 2003). New York: ACM Press, pp. 113-120.
+
+[5]	Wobbrock, J.O. and Myers, B.A. (2006) Analyzing the input stream for character-level 
+	errors in unconstrained text entry evaluations. ACM Transactions on Computer-Human 
+	Interaction (TOCHI) 13 (4), pp. 458-489.
+
+[6]	Wobbrock, J.O., Myers, B.A. and Kembel, J.A. (2003) EdgeWrite: A stylus-based text 
+	entry method designed for high accuracy and stability of motion. Proceedings of the 
+	ACM Symposium on User Interface Software and Technology (UIST '03). Vancouver, B.C. 
+	(November 2-5, 2003). New York: ACM Press, pp. 61-70.
