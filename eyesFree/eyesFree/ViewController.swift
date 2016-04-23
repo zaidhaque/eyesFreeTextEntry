@@ -28,6 +28,17 @@ class ViewController: UIViewController {
         print("<entry char=\"\(sender.currentTitle!)\" value=\"116\" time=\"166978.836\" />")
         outputTextField.text = outputTextField.text!.stringByAppendingString(sender.currentTitle!)
     }
+    
+    @IBAction func didSwipeLeft(sender: AnyObject) {
+        print("<entry char=\"BACKSPACE\" value=\"116\" time=\"166978.836\" />")
+        outputTextField.text = String(outputTextField.text!.characters.dropLast())
+    }
+    
+    @IBAction func didSwipeRight(sender: AnyObject) {
+        print("<entry char=\" \" value=\"116\" time=\"166978.836\" />")
+        outputTextField.text = outputTextField.text!.stringByAppendingString(" ")
+    }
+    
 }
 
 
