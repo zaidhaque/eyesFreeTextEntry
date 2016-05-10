@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var outputTextField: UITextField!
     var start : NSDate?
+    var STARTTIME = 280319.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,7 @@ class ViewController: UIViewController {
         //outputTextField.text = "i like cheese"
         
         start = NSDate()
-        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
+        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000 + STARTTIME
         
         print("<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>")
         print()
@@ -41,31 +42,46 @@ class ViewController: UIViewController {
     
     @IBAction func didTup (sender: UIButton) {
 
-        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
+        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000 + STARTTIME
         let char = sender.currentTitle! as NSString
         
         print()
         print("<entry char=\"\(char)\" value=\"\(char.characterAtIndex(0))\" time=\"\(timePassed)\" />")
         outputTextField.text = outputTextField.text!.stringByAppendingString(sender.currentTitle!)
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
+        
+        let utterance = AVSpeechUtterance(string: sender.currentTitle!)
+        synthesizer.speakUtterance(utterance)
+
     }
     
     @IBAction func didSwipeLeft(sender: AnyObject) {
         
-        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
+        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000 + STARTTIME
         
         print()
         print("<entry char=\"&#008;\" value=\"8\" time=\"\(timePassed)\" />")
         outputTextField.text = String(outputTextField.text!.characters.dropLast())
+        
+        let utterance = AVSpeechUtterance(string: "backspace")
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speakUtterance(utterance)
     }
     
     @IBAction func didSwipeRight(sender: AnyObject) {
         
-        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
+        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000 + STARTTIME
         let char = " " as NSString
         
         print()
         print("<entry char=\"\(char)\" value=\"\(char.characterAtIndex(0))\" time=\"\(timePassed)\" />")
         outputTextField.text = outputTextField.text!.stringByAppendingString(" ")
+        
+        let utterance = AVSpeechUtterance(string: "space")
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speakUtterance(utterance)
     }
     
     @IBAction func sendButton(sender: AnyObject) {
@@ -90,6 +106,10 @@ class ViewController: UIViewController {
         print("<presented>____________</presented>")
         
         outputTextField.text = ""
+        
+        let utterance = AVSpeechUtterance(string: "submit")
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speakUtterance(utterance)
     }
     
     @IBAction func didSwipeDown(sender: AnyObject) {
