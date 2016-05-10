@@ -783,6 +783,8 @@
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="O6H-NJ-eOO" appends="YES" id="lvd-5x-6dh"/>
                             <outletCollection property="gestureRecognizers" destination="AXs-Zs-p5k" appends="YES" id="dtb-NR-NIa"/>
+                            <outletCollection property="gestureRecognizers" destination="Vhp-TF-NcA" appends="YES" id="Cad-hJ-7cD"/>
+                            <outletCollection property="gestureRecognizers" destination="GJl-yo-J0e" appends="YES" id="Jve-L0-DEU"/>
                         </connections>
                     </view>
                     <connections>
@@ -798,6 +800,16 @@
                 <swipeGestureRecognizer direction="right" id="AXs-Zs-p5k">
                     <connections>
                         <action selector="didSwipeRight:" destination="BYZ-38-t0r" id="FY5-tz-naq"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="Vhp-TF-NcA">
+                    <connections>
+                        <action selector="didSwipeUp:" destination="BYZ-38-t0r" id="hon-6b-bQq"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="GJl-yo-J0e">
+                    <connections>
+                        <action selector="didSwipeDown:" destination="BYZ-38-t0r" id="Dtq-th-aAN"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

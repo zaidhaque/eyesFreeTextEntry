@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -16,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
+        
+        outputTextField.text = "i like cheese"
         
         start = NSDate()
         
@@ -58,9 +61,30 @@ class ViewController: UIViewController {
     
     @IBAction func sendButton(sender: AnyObject) {
         
+        print()
         print("<transcribed>\(outputTextField.text!)</transcribed>")
         print()
-        print("</task>")      
+        print("</task>")
+    }
+    
+    @IBAction func didSwipeUp(sender: AnyObject) {
+        
+        print()
+        print("<transcribed>\(outputTextField.text!)</transcribed>")
+        print()
+        print("</task>")
+        
+        outputTextField.text = ""
+    }
+    
+    @IBAction func didSwipeDown(sender: AnyObject) {
+        
+        let utterance = AVSpeechUtterance(string: outputTextField.text!)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.rate = 0.7
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speakUtterance(utterance)
     }
     
     
