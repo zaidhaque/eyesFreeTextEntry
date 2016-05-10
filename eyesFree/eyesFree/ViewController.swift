@@ -18,9 +18,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("viewDidLoad")
         
-        outputTextField.text = "i like cheese"
+        //outputTextField.text = "i like cheese"
         
         start = NSDate()
+        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
+        
+        print("<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>")
+        print()
+        print("<TextTest version=\"2.0.2\" time=\"\(timePassed)\" date=\"Tuesday, May 10, 2016 06:30:56\">")
+        print()
+        print("<task number=\"1\" testing=\"False\">")
+        print()
+        print("<presented>____________</presented>")
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -45,7 +54,7 @@ class ViewController: UIViewController {
         let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
         
         print()
-        print("<entry char=\"&#008;\" value=\"116\" time=\"\(timePassed)\" />")
+        print("<entry char=\"&#008;\" value=\"8\" time=\"\(timePassed)\" />")
         outputTextField.text = String(outputTextField.text!.characters.dropLast())
     }
     
@@ -55,16 +64,18 @@ class ViewController: UIViewController {
         let char = " " as NSString
         
         print()
-        print("<entry char=\"\(char)\" value=\"116\" time=\"\(timePassed)\" />")
+        print("<entry char=\"\(char)\" value=\"\(char.characterAtIndex(0))\" time=\"\(timePassed)\" />")
         outputTextField.text = outputTextField.text!.stringByAppendingString(" ")
     }
     
     @IBAction func sendButton(sender: AnyObject) {
         
+        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
+        
         print()
-        print("<transcribed>\(outputTextField.text!)</transcribed>")
+        print("<close error=\"0\" time=\"\(timePassed)\" date=\"Tuesday, May 10, 2016 06:30:56\"/>")
         print()
-        print("</task>")
+        print("</TextTest>")
     }
     
     @IBAction func didSwipeUp(sender: AnyObject) {
@@ -73,11 +84,19 @@ class ViewController: UIViewController {
         print("<transcribed>\(outputTextField.text!)</transcribed>")
         print()
         print("</task>")
+        print()
+        print("<task number=\"1\" testing=\"False\">")
+        print()
+        print("<presented>____________</presented>")
         
         outputTextField.text = ""
     }
     
     @IBAction func didSwipeDown(sender: AnyObject) {
+        
+        print()
+        print("didSwipeDown")
+        print()
         
         let utterance = AVSpeechUtterance(string: outputTextField.text!)
         utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
@@ -85,6 +104,7 @@ class ViewController: UIViewController {
         
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speakUtterance(utterance)
+        
     }
     
     
