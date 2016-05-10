@@ -11,10 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var outputTextField: UITextField!
+    var start : NSDate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
+        
+        start = NSDate()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -24,20 +28,41 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTup (sender: UIButton) {
-        print("didTup \(sender.currentTitle!)")
-        print("<entry char=\"\(sender.currentTitle!)\" value=\"116\" time=\"166978.836\" />")
+
+        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
+        let char = sender.currentTitle! as NSString
+        
+        print()
+        print("<entry char=\"\(char)\" value=\"\(char.characterAtIndex(0))\" time=\"\(timePassed)\" />")
         outputTextField.text = outputTextField.text!.stringByAppendingString(sender.currentTitle!)
     }
     
     @IBAction func didSwipeLeft(sender: AnyObject) {
-        print("<entry char=\"BACKSPACE\" value=\"116\" time=\"166978.836\" />")
+        
+        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
+        
+        print()
+        print("<entry char=\"&#008;\" value=\"116\" time=\"\(timePassed)\" />")
         outputTextField.text = String(outputTextField.text!.characters.dropLast())
     }
     
     @IBAction func didSwipeRight(sender: AnyObject) {
-        print("<entry char=\" \" value=\"116\" time=\"166978.836\" />")
+        
+        let timePassed = NSDate().timeIntervalSinceDate(start!) * 1000
+        let char = " " as NSString
+        
+        print()
+        print("<entry char=\"\(char)\" value=\"116\" time=\"\(timePassed)\" />")
         outputTextField.text = outputTextField.text!.stringByAppendingString(" ")
     }
+    
+    @IBAction func sendButton(sender: AnyObject) {
+        
+        print("<transcribed>\(outputTextField.text!)</transcribed>")
+        print()
+        print("</task>")      
+    }
+    
     
 }
 

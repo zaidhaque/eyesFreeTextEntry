@@ -749,6 +749,13 @@
                                     <constraint firstItem="97Z-Cj-ISR" firstAttribute="height" secondItem="ASG-we-1F5" secondAttribute="height" id="xd8-Y8-WPq"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XE-SZ-jqS">
+                                <rect key="frame" x="80" y="138" width="36" height="30"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qoi-fF-m0x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -761,6 +768,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="toq-zd-XWS" secondAttribute="trailing" constant="90" id="N8U-HG-oBs"/>
                             <constraint firstItem="VPl-KI-wVA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Qhe-sC-wDg"/>
                             <constraint firstItem="toq-zd-XWS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="VYT-42-5K7"/>
+                            <constraint firstItem="2XE-SZ-jqS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="bwE-OZ-MQz"/>
                             <constraint firstItem="kV6-oh-QNF" firstAttribute="top" secondItem="r5f-1M-88A" secondAttribute="bottom" constant="30" id="cWm-ug-bn4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="r5f-1M-88A" secondAttribute="trailing" constant="5" id="cge-YQ-5C0"/>
                             <constraint firstAttribute="bottomMargin" secondItem="UMI-9b-i3r" secondAttribute="bottom" constant="120" id="gff-Uu-vfU"/>
@@ -768,6 +776,7 @@
                             <constraint firstItem="kV6-oh-QNF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="iBT-d8-f9d"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kV6-oh-QNF" secondAttribute="bottom" constant="20" id="iIF-lG-NI0"/>
                             <constraint firstItem="kV6-oh-QNF" firstAttribute="height" secondItem="r5f-1M-88A" secondAttribute="height" id="jbQ-VZ-M7h"/>
+                            <constraint firstItem="2XE-SZ-jqS" firstAttribute="top" secondItem="toq-zd-XWS" secondAttribute="bottom" constant="18" id="lKz-qw-7Cy"/>
                             <constraint firstItem="kV6-oh-QNF" firstAttribute="width" secondItem="r5f-1M-88A" secondAttribute="width" id="p2e-5f-r8H"/>
                             <constraint firstItem="r5f-1M-88A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="y9F-rP-qW8"/>
                         </constraints>
